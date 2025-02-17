@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>line1</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: black;
+    }
+   
+    .line1{
+        width: 50rem;
+        height: 50rem;
+        background-color:  transparent;
+        border-top: 2rem solid blue;
+        border-radius: 0.5rem;
+         display: flex;
+         justify-content: center;
+         gap: 5rem;
+         
+    }
+   .line1 div{
+        width: 0.5rem;
+        height: 30rem;
+        background-color: blue; 
+        position: relative;
+        
+          
+    }
+    .line1 div::before{
+        content:"";
+        position: absolute;
+        bottom: 0%;
+        left: 50%; /* Centering the pseudo-element */
+        transform: translateX(-50%);
+        width: 5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: blue;
+        
+    }
+   
+    .line1 div:first-child {
+        animation-name: cycle;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform-origin: top left;
+
+    }
+    @keyframes cycle {
+        0%{
+            rotate: 0deg;
+            
+        }
+        25%{
+            rotate: 30deg;
+        }
+        50%{
+            rotate: 0deg;
+        }
+        100%{
+            rotate: 0deg;
+        }
+        
+    }
+    .line1 div:last-child{
+        animation-name: universal;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        transform-origin: top left;
+
+    }
+    @keyframes universal {
+        0%{
+            rotate: 0deg;
+            
+        }
+        25%{
+            rotate: -30deg;
+        }
+        50%{
+            rotate: 0deg;
+        }
+        100%{
+            rotate: 0deg;
+        }
+        
+    }
+    
+</style>
+<body>
+    <section>
+    <div class="line1">
+        <div ></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+   
+</body>
+</html>

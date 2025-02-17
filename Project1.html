@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: ;
+        }
+        img{
+            width: 15rem;
+            height: 3.5rem;
+            margin-top: -2rem;
+            margin-left: -5rem;
+        }
+       
+        
+        .navbar nav{
+            list-style-type: none;
+            margin-top: 1rem;
+            margin-left: 10rem;
+            display: flex;
+            gap: 2.5rem;
+            padding-top: 2rem;
+
+            
+
+           
+        }
+        a{
+            text-decoration: none; 
+            color: #000; 
+            background-image: linear-gradient(blue, blue); 
+         background-position: 0% 100%; 
+        background-size: 0% 2px; 
+        background-repeat: no-repeat; 
+         transition: background-size 0.5s ease;    
+        }
+        a:hover {
+    background-size: 100% 2px; 
+}
+        .ancr{
+            text-decoration: none;
+            color: white;
+        }
+        .li1{
+            margin-left: 40rem;
+        }
+            .li1,.li2,.li3,.li4,.li5{
+            margin-top: -1rem;
+           
+        }
+        .h1{
+          margin-left: 5rem;
+          width: 40rem;
+          font-size: 4rem;
+          margin-top: -1.5rem;
+          color: darkblue;
+        }
+        .sec1{
+            
+            margin-top: -2rem;
+            padding-top: 5rem;
+               height: 600px;
+            background: linear-gradient(60deg, rgba(97, 107, 255, 1), rgba(250, 250, 249, 1));
+            clip-path: polygon(
+                      0% 100%, 10% 95%, 20% 100%, 30% 95%, 40% 100%, 50% 95%,
+                     60% 100%, 70% 95%, 80% 100%, 90% 95%, 100% 100%, 100% 0%, 0% 0%)   
+        }
+        .btn{
+            width: 9rem;
+            border-radius: .5rem;
+            border-color: rgba(97, 107, 255, 1);
+            margin-left: 5rem;
+            height: 2.5rem;
+            background-color: rgba(97, 107, 255, 1);
+            color: aliceblue;
+            font-size: 1rem;
+           
+            
+        }
+        .btn:hover{
+            background-color: darkblue;
+           
+        }
+        .para1{
+            width: 20rem;
+            margin-left: 5rem;
+           
+            margin-top: 3rem;
+            font-size: large;
+            padding-top: 3rem;
+            color: darkblue;
+
+            
+            
+
+        }
+        .para2{
+            width: 30rem;
+           
+            margin-left: 5rem;
+            font-size: large;
+            color: aliceblue;
+            
+        }
+
+        .img2{
+            width: 500px;
+            height: 500px;
+            float: right;
+            margin-right: 10rem;
+           
+            padding-bottom: 3rem ;    
+        }
+       
+        .img3{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            margin-top: 0.9rem;
+            margin-left: 0.9rem;
+        }
+        .img4{
+            height: 110px;
+            width: 140px;
+            border-radius: 50%;
+            margin-top: 1rem;
+            margin-left: 0.2rem;
+        }
+        .img5{
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            margin-top: 0.6rem;
+            margin-left: 0.5rem;
+        }
+       
+        .sec3{
+            height: 150px;
+            width: 150px;
+          
+            border-radius: 50%;
+            margin-left: 12rem;
+            margin-top: 5rem;
+            background-color: lavender;
+            display: flex;
+            gap: 15rem;
+        }
+        .div3{
+            height: 150px;
+            width: 150px;
+           
+            border-radius: 50%;
+            background-color: lavender;
+            margin-left:-0.1 ;
+
+        }
+        .div4{
+            height: 150px;
+            width: 150px;
+           
+            border-radius: 50%;
+            background-color: lavender;
+            margin-left: 3rem;
+        }
+        .div5{
+            height: 150px;
+            width: 150px;
+           
+            border-radius: 50%;
+            background-color: lavender;
+            margin-left: 8rem;
+        }
+        .div3:hover{
+            background: linear-gradient(to right, #0575e6, #021b79);
+        }
+        .div4:hover{
+            background: linear-gradient(to right, #0575e6, #021b79);
+        }
+        .div5:hover{
+            background: linear-gradient(to right, #0575e6, #021b79);
+        }
+        
+        .img3:hover{
+           animation: rotate 0.3s linear;
+           animation-direction: alternate;
+        }
+        @keyframes rotate {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 360deg;
+            }
+           
+        }
+        .img3{
+           animation: unrotate 0.3s linear;
+           animation-direction: alternate;
+        }
+        @keyframes unrotate {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: -360deg;
+            }
+           
+            
+            
+        }
+        .img4:hover{ 
+           animation: rotate1 0.3s linear;
+           animation-direction: alternate;
+        }
+        @keyframes rotate1 {
+            to{
+                rotate: 360deg;
+            }
+            from{
+                rotate: 0deg;
+            }
+            
+        }
+        .img4{ 
+           animation: unrotate1 0.3s linear;
+           animation-direction: alternate;
+        }
+        @keyframes unrotate1 {
+            to{
+                rotate: 0deg;
+            }
+            from{
+                rotate: 360deg;
+            }
+            
+        }
+        .img5:hover{
+           animation: rotate2 0.3s linear;
+           animation-direction: alternate;
+        }
+        @keyframes rotate2 {
+            to{
+                rotate: 360deg;
+            }
+            from{
+                rotate: 0deg;
+            }
+            
+        }
+        .img5{
+           animation: unrotate2 0.3s linear;
+           animation-direction: alternate;
+        }
+        @keyframes unrotate2 {
+            to{
+                rotate: 0deg;
+            }
+            from{
+                rotate: 360deg;
+            }
+            
+        }
+      
+        .h2{
+           
+            margin-left: 5rem;
+            margin-top: 5rem;
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+        .para3{
+            margin-left: 5rem;
+            font-size: large;
+        }
+        .figcap{
+            margin-left: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figcap1{
+            margin-left: 2.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figcap2{
+            margin-left: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figpara{
+            width: 22rem;
+           
+            margin-left: -3rem;
+            font-size: large;
+        }
+        .figpara1{
+            width: 22rem;
+           
+            margin-left: -4rem;
+            font-size: large;
+        }
+        .figpara2{
+            width: 22rem;
+           
+            margin-left: -4rem;
+            font-size: large;
+        }
+        .container{
+            margin-left: 5rem;
+            margin-top: 5rem;
+            display: flex;
+           gap: 2.5rem;
+        }
+        .divcon1{
+            width: 75px;
+            height: 75px;
+           
+            border-radius: 50%;
+            background-color: gold;
+        }
+        .divcon2{
+            width: 75px;
+            height: 75px;
+           
+            border-radius: 50%;
+            background-color: skyblue;
+        }
+        .divcon3{
+            width: 75px;
+            height: 75px;
+           
+            border-radius: 50%;
+            background-color: goldenrod;
+        }
+        .divcon4{
+            width: 75px;
+            height: 75px;
+            
+            border-radius: 50%;
+            background-color: black;
+        }
+        .divcon5{
+            width: 75px;
+            height: 75px;
+           
+            border-radius: 50%;
+            margin-top: 1.2rem;
+            background-color: red;
+        }
+        .divcon6{
+            width: 75px;
+            height: 75px;
+           
+            border-radius: 50%;
+            margin-top: 1.2rem;
+            background-color: skyblue;
+        }
+        .divcon7{
+            width: 75px;
+            height: 75px;
+            
+            border-radius: 50%;
+            margin-top: 1.2rem;
+            background-color: blue;
+        }
+        .jslogo{
+            width: 25px;
+            height: 25px;
+           
+            margin-left: 1.5rem;
+            margin-top: 1.5rem;    
+        }
+        .jvalogo{
+            width: 50px;
+            height: 50px;
+           
+            margin-left: 0.7rem;
+            margin-top: 0.7rem; 
+            background-color: skyblue;
+        }
+        .pytnlogo{
+            width: 50px;
+            height: 50px;
+           
+            margin-left: 0.7rem;
+            margin-top: 0.7rem; 
+        }
+        .html5logo{
+            width: 50px;
+            height: 50px;
+           
+            margin-left: 0.7rem;
+            margin-top: 0.7rem; 
+        }
+        .devlogo{
+            width: 50px;
+            height: 50px;
+           
+            margin-left: 0.7rem;
+            margin-top: 0.8rem; 
+        }
+        .figcap3{
+            margin-left: 0rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figcap4{
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figcap5{
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figcap6{
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figcap7{
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figpara3{
+            width: 13rem;
+           
+            margin-left: 0rem;
+            font-size: large;
+        }
+       .figpara4{
+            width: 13rem;
+           
+            margin-left: 0rem;
+            font-size: large;
+       }
+       .figpara5{
+            width: 13rem;
+            
+            margin-left: 0rem;
+            font-size: large;
+       }
+       .figpara6{
+            width: 13rem;
+            
+            margin-left: 0rem;
+            font-size: large;
+       }
+       .secbdr{
+        width: 1519px;
+        height: 950px;
+       
+        background-color: rgba(135, 206, 250, 0.1);
+       }
+       .divbdr{
+        width: 650px;
+        height: 285px;
+        padding-left: 2.5rem;
+        padding-top: 2.5rem;
+        
+       }
+       .divbdr1{
+        width: 650px;
+        height: 285px;
+        padding-left: 2.5rem;
+        padding-top: 2.5rem;
+       
+       }
+       .divbdr2{
+        width: 650px;
+        height: 285px;
+        padding-left: 2.5rem;
+        padding-top: 2.5rem;
+       
+       }
+       .divbdr3{
+        width: 600px;
+        height: 280px;
+        padding-left: 2.5rem;
+        padding-top: 2.5rem;
+        
+       }
+       .divbdr4{
+        width: 330px;
+        height: 280px;
+        padding-left: 2.5rem;
+        padding-top: 1rem; 
+        margin-top: -2.5rem;   
+       
+        
+       }
+       .divbdr:hover{
+        transition: all 0.3s linear;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       .divbdr1:hover{
+        transition: all 0.3s linear;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       .divbdr2:hover{
+        transition: all 0.3s linear;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       .divbdr3:hover{
+        transition: all 0.3s linear;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       .divbdr4:hover{
+        transition: all 0.3s linear;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       .divcon8{
+            width: 50px;
+            height: 50px;
+           
+            border-radius: 50%;
+            background-color: skyblue;
+            margin-top: 10rem;
+            margin-left: 25rem;
+        }
+        .nmbrlogo{
+            width: 20px;
+            height: 20px;
+           
+            margin-left: 0.8rem;
+            margin-top: 0.8rem; 
+        background-color:  #ebf3fe;
+           
+        }
+        .figpara7{
+            width: 20rem;
+          
+            margin-left: -15.5rem;
+            font-size: large;
+       }
+       .figcap8{
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            margin-left: -8.5rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figpara8{
+            width: 20rem;
+            
+            margin-left: -.3rem;
+            font-size: large;
+           
+       }
+       .figcap10{
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            margin-left: -13rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+       .figcap9{
+            padding-left: 8rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            margin-left: -8.5rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+      .divleft{
+          display: grid;
+        gap: 1rem;
+      }
+      .divright{
+          display: grid;
+        gap: 1rem;
+       
+        margin-top: -41rem;
+        margin-left: 40rem;
+      }
+      .divcon9{
+            width: 500px;
+            height: 500px;
+            border: 5px solid #ebf3fe;
+            border-radius: 50%;
+        }
+        .divcon10{
+            width: 450px;
+            height: 450px;
+           
+            border-radius: 50%;
+            background-color: skyblue;
+            animation: change 3s linear  infinite ;
+        }
+        @keyframes change {
+            0%{
+                background-color:#ebf3fe ;
+            }
+            50%{
+                background-color: lightblue;
+            }
+            100%{
+                background-color: #2049ebeb;;
+            }
+            
+        }
+        .insidecon9{
+            width: 20px;
+            height: 20px;
+           
+            margin-left: 0.8rem;
+            margin-top: 0.8rem; 
+            background-color: skyblue;
+        }
+        .divmiddle1{
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+      }
+        .divmiddle{
+          display: grid;
+        gap: 10rem;
+       
+        margin-top: -27rem;
+        margin-left: 31.5rem;
+      }
+      .thapaimg{
+        height: 800px;
+        width: 380px;
+        margin-left: 2.1rem;
+        margin-top: -10rem;
+      }
+      .lowerborder{
+        height: 300px;
+        width: 800px;
+        margin-left: 22rem;
+        margin-top: 30rem;
+       
+      }
+      .bottomborder{
+        height: 700px;
+        width: 1525.5px;
+        border: 2px solid black;
+        margin-left: -22.5rem;
+        margin-top: 12rem;
+        background-color: black;
+      }
+      .h4{
+            width: 20rem;
+           
+            margin-left: 3rem;
+            margin-top: 2rem;
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+        .para9{
+            width: 18rem;
+            margin-top: 1rem;
+            margin-left: 3rem;
+            color: #504e4d;
+            font-size: large;
+            font-family: "Urbanist", sans-serif;
+        }
+        .btn1{
+            width: 10rem;
+            border-radius: .5rem;
+            border-color: rgba(97, 107, 255, 1);
+            margin-top: 1rem;
+            margin-left: 3rem;
+            height: 3rem;
+            background-color: #2049ebeb;
+            color: aliceblue;
+            font-size: 1.2rem;   
+        }
+        .nmbrlogo1{
+            width: 25px;
+            height: 25px;
+          
+            margin-left: 0.2rem;
+            margin-top: 0.4rem; 
+        background-color:  #ebf3fe;
+           
+        }
+        .ancr1{
+           
+            text-decoration: none;
+            color: white;
+           margin-left: 1.5rem;
+           
+        }
+        .btn1:hover{
+            background-color: darkblue;
+           
+        }
+        .webimg{
+           height: 325px;
+           width: 325px;
+        }
+        .wbimg{
+            height: 300px;
+            width: 300px;
+           
+            margin-left: 24rem;
+            margin-top: -14rem;
+        }
+        .lowerborder1{
+            box-shadow: 3px 3px 10px 3px #dddddd;
+            background-color: white;
+        height: 300px;
+        width: 800px;
+        padding-top: 1rem;
+        margin-left: 22.2rem;
+        margin-top: -12.3rem;
+      }
+      .lidiv{
+        gap: 13rem;
+        margin-top: -3rem;
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+     margin-left: 13rem;
+      
+      }
+      .bottomancr{
+            color: aliceblue;
+            font-size: x-large;
+            margin-left: 0rem;
+           
+            text-decoration: none;
+
+      }
+      .botmpara{
+        width: 15rem;
+       color: #ebf3fe;
+       font-size: large;
+      
+       margin-top: 1rem;
+       margin-left: 0rem;
+
+      }
+      .lipara{
+        font-size: large;
+      
+        margin-top: 1rem;
+       margin-left: 1rem;
+
+      }
+      .lipara1{
+        font-size: large;
+       
+        margin-top: 1rem;
+       margin-left: 2.5rem;
+
+      }
+      .lipara2{
+        font-size: large;
+        
+        margin-top: 1rem;
+       margin-left: 0rem;
+
+      }
+      .pytnlogo1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+           
+            background-color:  #ebf3fe;;
+            margin-left: 0.7rem;
+            margin-top: 1.5rem; 
+        }
+        .pytnlogo1:hover{
+            background: linear-gradient(to right, #0575e6, #021b79);
+        }
+        .pytnlogo1:hover{
+           animation: asrotate 0.2s linear;
+           animation-direction: alternate;
+        }
+        @keyframes asrotate {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 360deg;
+            }
+           
+        }
+        .pytnlogo1{
+           animation: asunrotate 0.2s linear;
+           animation-direction: alternate;
+        }
+        @keyframes asunrotate {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: -360deg;
+            }    
+        }
+        .liparaa{
+            color: white;
+        }
+        .ancr2{
+        text-decoration: none;
+        color: black;
+        background-image: none;
+       
+            
+        }
+        
+       
+       
+       
+       
+
+    </style>
+</head>
+<body>
+    <header class="header">    
+        <div class="navbar">
+        <nav class="nav">
+            <li class="img1"> <img src="32171678949026310a36e6aa73536f45-web-developer-logo-design.webp" alt="Logo" ></li>
+            <li class="li1"> <a href="Project1.html" >HOME</a></li>
+            <li class="li2"> <a href="#about">ABOUT</a></li>
+            <li class="li3"> <a href="#service">SERVICES</a></li>
+            <li class="li4"> <a href="Blog.html">BLOG</a></li>
+            <li class="li5"> <a href="ContactUs.html">CONTACT</a></li>
+        </nav>
+    </div>
+</header><br><br>
+<main>
+    <section class="sec1">
+       <div class="div1">
+        <img class="img2" src="./1739259973606.jpg" alt="developer male" >
+        <p class="para1">EMPOWERING LIFELONG LEARNING</p><br> 
+        <h1 class="h1">Unlock Your Potential With Thapa EduHub</h1><br>
+        <p class="para2">Welcome to Thapa EduHub, your gateway to knowledge and skill development.We are dedicated to providing high-quality, accessible education for learners for all ages and background.</p><br>
+        <button class="btn" >
+            <a class="ancr" href="#btn">Learn With Us</a></button>
+           </div>
+        </section>
+        <section id="about">
+            <div class="div2">
+                <h2 class="h2">ABOUT THAPA EDUHUB</h2>
+                <p class="para3">Guiding your learning journey through research, design, and development excellence.</p>
+            </div>
+            </section>
+            <section class="sec3">
+             <div class="div3">
+                <figure>
+                    <img class="img3" src="./vecteezy_keyword-search-technology-concept-to-find-information-from_12859739.jpg" alt="Search img">
+                    <figcaption class="figcap">Research</figcaption>
+                    <figcaption class="figpara"><p class="figpara">We start by learning what you need. We look at what's new and exciting in learning and choose topics that match what you want to learn.</p></figcaption>
+                </figure>
+            </div>
+            
+                <div class="div4">
+                   <figure>
+                    <img class="img4" src="./creative design.avif" alt="design logo">
+                    <figcaption class="figcap1">Design</figcaption>
+                   </figure>
+                   <p class="figpara1">Next, we make the lessons. We make them fun and interesting for you. We make sure they work for different ways people like to learn.</p>
+                </div>
+                   <div class="div5">
+                    <figure>
+                        <img class="img5" src="./development.png" alt="development">
+                        <figcaption class="figcap2">Development</figcaption>
+                    </figure>
+                    <p class="figpara2">After that, we turn the lessons into things you can use online. We use the latest tools to make sure they work well and make you happy.</p>
+
+                   </div>
+            </section><br><br><br><br><br><br><br><br><br><br><br><br>
+            <section class="secbdr">
+            <section id="service">
+                <div>
+                <h3 class="h2">Explore Our Courses</h3>
+                <p class="para3">Discover a variety of courses across different categories.</p>
+            </div>
+            <div class="container">
+                <div class="divbdr">
+                <div class="divcon1">
+                    <figure>
+                       <img class="jslogo" src="./jslogo.png" alt="jslogo">
+                       <figcaption class="figcap3">JSDevelopment</figcaption>
+                    </figure>
+                    <p class="figpara3">Create dynamic, interactive web applications for user engagement.</p>
+                </div>
+            </div>
+            <div class="divbdr1">
+                <div class="divcon2">
+                    <figure>
+                        <img class="jvalogo" src="./Java-Transparent-Background.png" alt="java">
+                        <figcaption class="figcap4">JavaDevelopment</figcaption> 
+                    </figure>
+                    <p class="figpara4">Cross-platform application in development with java programming.</p>
+                </div>
+            </div>
+            <div class="divbdr2">
+                <div class="divcon3">
+                    <figure>
+                        <img class="pytnlogo" src="./phytonlogotrans.png" alt="phyton">
+                        <figcaption class="figcap5">Python</figcaption>
+                    </figure>
+                    <p class="figpara5">Versatile language for solving application development.</p>
+                </div>
+            </div>
+            <div class="divbdr3">
+                <div class="divcon4">
+                    <figure>
+                        <img class="html5logo" src="./html5.png" alt="html5">
+                        <figcaption class="figcap6">HTML</figcaption>
+                    </figure>
+                    <p class="figpara6">HTML is a structure of website, it is a markup language.</p>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="divbdr4">
+                <div class="divcon5">
+                    <figure>
+                       <img class="devlogo" src="./c++trans.png" alt="C++logo">
+                       <figcaption class="figcap7">C++Development</figcaption>
+                    </figure>
+                    <p class="figpara3">Powerful, efficient coding language for software development.</p>
+                </div>
+            </div>
+            <div class="divbdr4">
+                <div class="divcon6">
+                    <figure>
+                        <img class="devlogo" src="./sqltrans.png" alt="sql">
+                        <figcaption class="figcap7">SQLDevelopment</figcaption>
+                    </figure>
+                    <p class="figpara3">SQL is a computer language we use to interact with a relational database.</p>
+                </div>
+            </div>
+            <div class="divbdr4">
+                <div class="divcon7">
+                    <figure>
+                        <img class="devlogo" src="./css3trans.png" alt="css3">
+                        <figcaption class="figcap7">CSS</figcaption>
+                    </figure>
+                    <p class="figpara3">CSS (Cascading Style Sheets) allows you to create great-looking web pages.</p>
+                </div>
+            </div>
+            </div>
+            </section>
+        </section>
+            <section>
+                <div>
+                <h3 class="h2">Why choose Shahzan EduHub</h3>
+                <p class="para3">Choose Thapa EduHub for a holistic, enriching learning experience that empowers you to achieve your goals.</p>
+            </div>  
+            <div class="divleft">
+                <div class="divcon8">
+                    <figure>
+                        <img class="nmbrlogo" src="./one.png" alt="one">
+                        <figcaption class="figcap8">ExpertInstructors</figcaption> 
+                    </figure>
+                    <p class="figpara7">Learn from experienced teachers who are passionate about sharing knowledge and guiding you toward success in your learning journey.</p>
+                </div>
+                <div class="divcon8">
+                    <figure>
+                        <img class="nmbrlogo" src="./twoblue.png" alt="one">
+                        <figcaption class="figcap8">InteractiveLessons</figcaption> 
+                    </figure>
+                    <p class="figpara7">Engage in hands-on learning experiences that make education fun and memorable. Interactive lessons encourage active.</p>
+                </div>
+                <div class="divcon8">
+                    <figure>
+                        <img class="nmbrlogo" src="./threeblue.png" alt="three">
+                        <figcaption class="figcap10">LifelongLearningSupport</figcaption> 
+                    </figure>
+                    <p class="figpara7">Our commitment to your education doesn't end with a certificate. Receive ongoing support and resources..</p>
+                </div>
+                </div> 
+                <div class="divright">
+                    <div class="divcon8">
+                        <figure>
+                            <img class="nmbrlogo" src="./fourblue.png" alt="four">
+                            <figcaption class="figcap9">ExpertInstructors</figcaption> 
+                        </figure>
+                        <p class="figpara8">Learn from experienced teachers who are passionate about sharing knowledge and guiding you toward success in your learning journey.</p>
+                    </div>
+                    <div class="divcon8">
+                        <figure>
+                            <img class="nmbrlogo" src="./five.png" alt="five">
+                            <figcaption class="figcap9">ExpertInstructors</figcaption> 
+                        </figure>
+                        <p class="figpara8">Learn from experienced teachers who are passionate about sharing knowledge and guiding you toward success in your learning journey.</p>
+                    </div>
+                    <div class="divcon8">
+                        <figure>
+                            <img class="nmbrlogo" src="./six.png" alt="six`">
+                            <figcaption class="figcap9">ExpertInstructors</figcaption> 
+                        </figure>
+                        <p class="figpara8">Learn from experienced teachers who are passionate about sharing knowledge and guiding you toward success in your learning journey.</p>
+                    </div>
+                </div>
+                <div class="divmiddle">
+                    <div class="divcon9"> 
+                        <div class="divmiddle1"> 
+                        <div class="divcon10">
+                            <img class="thapaimg" src="./Thapaimage.png" alt="thapaimg">
+                        </div>
+                    </div>  
+                    </div>
+                   
+                </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+                <div class="lowerborder">
+                    <div class="bottomborder">
+                    <div class="lowerborder1">
+                    <h4 class="h4">Let's revolutionize the way you study</h4>
+                    <p class="para9">Join our free boot camp to know us better</p>
+                    <div class="btn1"> 
+                        <a class="ancr1"  href="ContactUs.html" > Start Now <img class="nmbrlogo1" src="./arrow.png" alt="arrow">  </a> 
+                       <div class="wbimg"> <img class="webimg" src="./webdeveloper.webp" alt="webdeveloper"></div>
+                    </div>
+                </div>
+                </div>
+                   </div>
+                   <div class="lidiv">
+                    <li> <a class="bottomancr" href="#home">Thapa EduHub</a> <p class="botmpara">Let's revolutionize the way you study with Thapa EduHub</p>
+                      <a class="ancr2" href="https://www.instagram.com/"><img class="pytnlogo1"  src="./instagram.webp" alt="instagram" ></a>  <a class="ancr2" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsponsors%2Faccounts"><img class="pytnlogo1" src="./github.webp" alt="github"></a>  <a class="ancr2" href="https://www.linkedin.com/feed/"><img class="pytnlogo1" src="./linhdin.png" alt="linkdin"></a> </li>
+                    <li>Home  <p class="lipara"><a class="liparaa" href="#home">home</a></p>  <p class="lipara"><a class="liparaa" href="#home">home</a></p> <p class="lipara"><a class="liparaa" href="#home">home</a></p> <p class="lipara"><a class="liparaa" href="#home">home</a></p> <p class="lipara"><a class="liparaa" href="#home">home</a></p></li>
+                    <li>Courses  <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p>  <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p> <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p> <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p> <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p></li>
+                    <li>Blogs  <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p>  <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p> <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p> <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p> <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p></li>
+                   </div>
+  </footer>
+
+</body>
+</html>

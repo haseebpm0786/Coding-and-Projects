@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: ;
+        }
+        img{
+            width: 15rem;
+            height: 3.5rem;
+            margin-top: -2rem;
+            margin-left: -5rem;
+          
+        }
+        .header{
+           border: 2px solid white;
+        }
+        
+        .navbar nav{
+            list-style-type: none;
+            margin-top: 1rem;
+            margin-left: 10rem;
+            display: flex;
+            gap: 2.5rem;
+            padding-top: 2rem;  
+        }
+        a{
+            text-decoration: none; 
+            color: #000; 
+            background-image: linear-gradient(blue, blue); 
+         background-position: 0% 100%; 
+        background-size: 0% 2px; 
+        background-repeat: no-repeat; 
+         transition: background-size 0.5s ease;   
+        }
+        a:hover {
+    background-size: 100% 2px; 
+}
+        .li1{
+            margin-left: 40rem;
+        }
+            .li1,.li2,.li3,.li4,.li5{
+            margin-top: -1rem;
+           
+        }
+        .h2{
+            margin-left: 4rem;
+            margin-top: 3rem;
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+        .para3{
+            margin-left: 4rem;
+            font-size: large;
+        }
+        .container{
+            margin-left: 4rem;
+            margin-top: 5rem;
+            display: flex;
+           gap: 3rem;
+          background-color: aliceblue;
+          
+        }
+        .divcon1{
+            width: 300px;
+            height: 200px;
+            margin-top: -2.5rem;
+            margin-left: -2.5rem;
+        }
+      
+        .jslogo{
+            width: 300px;
+            height: 200px;
+            margin-top: 0rem;
+            margin-left: 0rem; 
+        }
+     
+        .figcap3{
+            margin-left: 6rem;
+            margin-top: 0.8rem;
+            margin-bottom: 1rem;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .figpara3{
+            width: 15rem;
+           
+            margin-top: -1rem;
+            font-size: -.5rem;
+            font-weight: bolder;
+        }
+       .secbdr{
+        margin-top: -1.5rem;
+        width: 1519px;
+        height: 649px;
+        border: 1px solid rgba(135, 206, 250, 0.1);
+        background-color: rgba(135, 206, 250, 0.1);
+
+       }
+       .divbdr{
+        width: 300px;
+        height: 285px;
+        padding-left: 2.5rem;
+        padding-top: 2.5rem;
+        background-color: white;
+        box-shadow: 3px 3px 10px 3px #dddddd;
+        border-color: #ebf3fe;
+       }
+       .divbdr:hover{
+        transition: all 0.3s linear;
+        transform: scale(1.1);
+       }
+      
+       .lowerborder{
+        height: 300px;
+        width: 800px;
+        margin-left: 22rem;
+        margin-top: 25rem;
+       
+      }
+      .bottomborder{
+        height: 700px;
+        width: 1527px;
+        border: 2px solid black;
+        margin-left: -22.5rem;
+        margin-top: 12rem;
+        background-color: black;
+      }
+      .h4{
+            width: 20rem;
+           
+            margin-left: 3rem;
+            margin-top: 2rem;
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+        .para9{
+            width: 18rem;
+            margin-top: 1rem;
+            margin-left: 3rem;
+            color: #504e4d;
+            font-size: large;
+            font-family: "Urbanist", sans-serif;
+        }
+        .btn1{
+            width: 10rem;
+            border-radius: .5rem;
+            border-color: rgba(97, 107, 255, 1);
+            margin-top: 1rem;
+            margin-left: 3rem;
+            height: 3rem;
+            background-color: #2049ebeb;
+            color: aliceblue;
+            font-size: 1.2rem;   
+        }
+        .nmbrlogo1{
+            width: 25px;
+            height: 25px;
+           
+            margin-left: 0.2rem;
+            margin-top: 0.4rem; 
+        background-color:  #ebf3fe;
+           
+        }
+        .ancr1{
+           
+            text-decoration: none;
+            color: white;
+           margin-left: 1.5rem;
+           
+        }
+        .btn1:hover{
+            background-color: darkblue;
+           
+        }
+        .webimg{
+           height: 325px;
+           width: 325px;
+        }
+        .wbimg{
+            height: 300px;
+            width: 300px;
+            
+            margin-left: 28.5rem;
+            margin-top: -14rem;
+        }
+        .lowerborder1{
+            box-shadow: 3px 3px 10px 3px #dddddd;
+            background-color: white;
+        height: 300px;
+        width: 800px;
+        padding-top: 1rem;
+        margin-left: 22.2rem;
+        margin-top: -12.3rem;
+      }
+      .lidiv{
+        gap: 13rem;
+       
+        margin-top: -3rem;
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+     margin-left: 13rem;
+     
+      }
+      .bottomancr{
+            color: aliceblue;
+            font-size: x-large;
+            margin-left: 0rem;
+           
+            text-decoration: none;
+
+      }
+      .botmpara{
+        width: 15rem;
+       color: #ebf3fe;
+       font-size: large;
+      
+       margin-top: 1rem;
+       margin-left: 0rem;
+
+      }
+      .lipara{
+        font-size: large;
+       
+        margin-top: 1rem;
+       margin-left: 1rem;
+
+      }
+      .lipara1{
+        font-size: large;
+       
+        margin-top: 1rem;
+       margin-left: 2.5rem;
+
+      }
+      .lipara2{
+        font-size: large;
+       
+        margin-top: 1rem;
+       margin-left: 0rem;
+
+      }
+      .pytnlogo1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          
+            background-color:  #ebf3fe;;
+            margin-left: 0.7rem;
+            margin-top: 1.5rem; 
+        }
+        .pytnlogo1:hover{
+            background: linear-gradient(to right, #0575e6, #021b79);
+        }
+        .pytnlogo1:hover{
+           animation: asrotate 0.2s linear;
+           animation-direction: alternate;
+        }
+        @keyframes asrotate {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: 360deg;
+            }
+           
+        }
+        .pytnlogo1{
+           animation: asunrotate 0.2s linear;
+           animation-direction: alternate;
+        }
+        @keyframes asunrotate {
+            0%{
+                rotate: 0deg;
+            }
+            100%{
+                rotate: -360deg;
+            }    
+        }
+        .liparaa{
+            color: white;
+        }
+        .ancr2{
+        text-decoration: none;
+        color: black;
+        background-image: none;   
+        }
+        .clndr{
+            height: 60px;
+            width: 55px;
+           
+            padding-top: 1.2rem;  
+            
+        }
+        .arrow{
+            height: 45px;
+            width: 45px;
+            
+            margin-left: 9rem;
+            margin-top: -4rem;
+           
+        }
+        .figcappara{
+            margin-top: -2.5rem;
+            margin-left: -2rem;
+           
+            width: 10rem;
+        }
+        .arrow1{
+           
+            margin-top: -1rem;
+        }
+        .clndr1{
+            margin-left: -1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">    
+        <div class="navbar">
+        <nav class="nav">
+            <li class="img1"> <img src="32171678949026310a36e6aa73536f45-web-developer-logo-design.webp" alt="Logo" ></li>
+            <li class="li1"> <a href="Project1.html" >HOME</a></li>
+            <li class="li2"> <a href="#about">ABOUT</a></li>
+            <li class="li3"> <a href="#service">SERVICES</a></li>
+            <li class="li4"> <a href="Blog.html">BLOG</a></li>
+            <li class="li5"> <a href="ContactUs.html">CONTACT</a></li>
+        </nav>
+    </div>
+</header><br><br>
+<main>
+        <section class="secbdr">
+            <section id="service">
+                <div>
+                <h3 class="h2">Explore Our Blog</h3>
+                <p class="para3">Explore our blog for insightful articles, tips, and updates on the world of education, skill development and personal growth.</p>
+            </div>
+            <div class="container">
+                <div class="divbdr">
+                <div class="divcon1">
+                    <figure>
+                       <img class="jslogo" src="./blog1.jpg" alt="blog1">
+                       <figcaption class="figcap3"> <div class="clndr1" > <img class="clndr" src="./calendeer.png" alt="calender"></div><p class="figcappara">Aug 11 2024</p> <div class="arrow1"> <img  class="arrow" src="./bluerightarrow.png" alt="arrow"></div> </figcaption>
+                    </figure>
+                    <p class="figpara3">Code your first react app with us</p>
+                </div>
+            </div>
+            <div class="divbdr">
+                <div class="divcon1">
+                    <figure>
+                       <img class="jslogo" src="./blog2.jpg" alt="blog2">
+                       <figcaption class="figcap3"> <div class="clndr1" > <img class="clndr" src="./calendeer.png" alt="calender"></div><p class="figcappara">Aug 11 2024</p> <div class="arrow1"> <img  class="arrow" src="./bluerightarrow.png" alt="arrow"></div> </figcaption>
+                    </figure>
+                    <p class="figpara3">Code your first react app with us</p>
+                </div>
+            </div> 
+            <div class="divbdr">
+                <div class="divcon1">
+                    <figure>
+                       <img class="jslogo" src="./blog3.jpg" alt="blog3">
+                       <figcaption class="figcap3"> <div class="clndr1" > <img class="clndr" src="./calendeer.png" alt="calender"></div><p class="figcappara">Aug 11 2024</p> <div class="arrow1"> <img  class="arrow" src="./bluerightarrow.png" alt="arrow"></div> </figcaption>
+                    </figure>
+                    <p class="figpara3">Code your first react app with us</p>
+                </div>
+            </div>
+            <div class="divbdr">
+                <div class="divcon1">
+                    <figure>
+                       <img class="jslogo" src="./blog4.webp" alt="blog4">
+                       <figcaption class="figcap3"> <div class="clndr1" > <img class="clndr" src="./calendeer.png" alt="calender"></div><p class="figcappara">Aug 11 2024</p> <div class="arrow1"> <img  class="arrow" src="./bluerightarrow.png" alt="arrow"></div> </figcaption>
+                    </figure>
+                    <p class="figpara3">Code your first react app with us</p>
+                </div>
+            </div>
+            </div>   
+    </section>
+</section>
+</main>
+<footer>
+    <div class="lowerborder">
+        <div class="bottomborder">
+        <div class="lowerborder1">
+        <h4 class="h4">Let's revolutionize the way you study</h4>
+        <p class="para9">Join our free boot camp to know us better</p>
+        <div class="btn1"> 
+            <a class="ancr1"  href="ContactUs.html" > Start Now <img class="nmbrlogo1" src="./arrow.png" alt="arrow">  </a> 
+           <div class="wbimg"> <img class="webimg" src="./webdeveloper.webp" alt="webdeveloper"></div>
+        </div>
+    </div>
+    </div>
+       </div>
+       <div class="lidiv">
+        <li> <a class="bottomancr" href="#home">Thapa EduHub</a> <p class="botmpara">Let's revolutionize the way you study with Thapa EduHub</p>
+          <a class="ancr2" href="https://www.instagram.com/"><img class="pytnlogo1"  src="./instagram.webp" alt="instagram" ></a>  <a class="ancr2" href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsponsors%2Faccounts"><img class="pytnlogo1" src="./github.webp" alt="github"></a>  <a class="ancr2" href="https://www.linkedin.com/feed/"><img class="pytnlogo1" src="./linhdin.png" alt="linkdin"></a> </li>
+        <li>Home  <p class="lipara"><a class="liparaa" href="#home">home</a></p>  <p class="lipara"><a class="liparaa" href="#home">home</a></p> <p class="lipara"><a class="liparaa" href="#home">home</a></p> <p class="lipara"><a class="liparaa" href="#home">home</a></p> <p class="lipara"><a class="liparaa" href="#home">home</a></p></li>
+        <li>Courses  <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p>  <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p> <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p> <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p> <p class="lipara1"><a class="liparaa" href="#home">CSS</a></p></li>
+        <li>Blogs  <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p>  <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p> <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p> <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p> <p class="lipara2"><a class="liparaa" href="#home">HTML3</a></p></li>
+       </div>
+</footer>
+    
+</body>
+</html>
